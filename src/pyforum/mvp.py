@@ -46,8 +46,8 @@ def main():
             print("\nCréation d'un forum...")
             nom = input("Entrez le nom du forum: ")
             description = input("Entrez la description du forum: ")
-            Forum = {'nom': nom, 'description': description}
-            db.creer_forum(**Forum)
+            forum = {'nom': nom, 'description': description}
+            db.creer_forum(**forum)
             # TODO: Ajouter ici la logique pour demander des informations à l'utilisateur
             # TODO: Ajouter l'appel à la base de donnée pour créer le forum
 
