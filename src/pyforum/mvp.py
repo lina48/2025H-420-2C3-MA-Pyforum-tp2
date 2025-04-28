@@ -70,7 +70,7 @@ def main():
             auteur_id = input("Entrez l'ID de l'auteur: ")
             publication_id = input("Entrez l'ID de la publication: ")
             commentaire = {'contenu': contenu, 'auteur_id': auteur_id, 'publication_id': publication_id}
-            db.ajouter_commentaire(contenu, auteur_id, publication_id)
+            db.creer_commentaire(contenu, auteur_id, publication_id)
 
             # TODO: Ajouter ici la logique pour demander des informations à l'utilisateur
             # TODO: Ajouter l'appel à la base de donnée pour créer le commentaire
