@@ -78,8 +78,11 @@ def main():
         elif choix == '5':
             # Joindre un forum
             print("\nJoindre un forum...")
-            nom = input("Entrez le nom du forum: ")
-            db.obtenir_forum_par_nom(nom)
+            utilisateur = input("Entrez le nom d'utilisateur:")
+            forum_id = input("Entre l'id du forum :")
+            nom = input("Entrez le nom du forum:")
+            joindre_forum={'utilisateur':utilisateur,'forum_id':forum_id,'nom':nom}
+            db.mettre_a_jour_forum(**joindre_forum)
 
 
             # TODO: Ajouter ici la logique pour demander des informations à l'utilisateur
